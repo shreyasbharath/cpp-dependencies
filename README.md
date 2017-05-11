@@ -50,6 +50,10 @@ If you want to use Boost::Filesystem instead of std::filesystem, if your platfor
 not have a std::filesystem implementation yet or if you prefer it, add `-DWITH_BOOST` 
 to the invocation of _CMake_. 
 
+To build with MinGW on Windows, use
+
+    cmake -G "MinGW Makefiles" -D CMAKE_CXX_COMPILER="path/to/g++" <PATH_TO_THIS_SOURCE_DIR>
+
 To build the tool, either execute
 
     make
